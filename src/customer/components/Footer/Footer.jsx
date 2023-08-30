@@ -119,7 +119,7 @@ const Footer = () => {
         </Grid>
 
         <Grid className="pt-10" item xs={12}>
-            <Typography>
+            <Typography variant="body2">
                 &copy; 2023 My Company. All right reserved.
             </Typography>
             <Typography>

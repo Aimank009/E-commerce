@@ -5,15 +5,15 @@ import { Divider,Button } from '@mui/material'
 const Cart = () => {
   return (
     <div>
-        <div className='lg:grid grid-cols-3 lg:px-16 relative '>
+        <div className='lg:grid grid-cols-3 lg:px-16 relative  mt-10'>
             <div className='col-span-2 '>
                 {[1,1,1].map((item)=> <CartItem/>)}
             </div>
-            <div  className='px-5 sticky top-0 h-[100vh] mt-5 lg:mt-0'>
-                <div className='border'>
+            <div  className='px-5 sticky top-0 h-[100vh] mt-5 lg:mt-0 '>
+                <div className='border rounded-md shadow-lg p-2'>
                     <p className='uppercase font-bold opacity-60 pb-4 '>Price Detail</p>
                     <Divider/>
-                    <div className='space-y-3 font-semibold mb-4'>
+                    <div className='space-y-3 font-semibold mb-4 '>
                         <div className='flex justify-between pt-3 text-black'>
                             <span>Price</span>
                             <span>₹4679</span>
@@ -32,10 +32,12 @@ const Cart = () => {
                         </div>
 
                     </div>
+                </div>
+                <div className='mt-5'>
                     <Button variant="contained" className='w-full' sx={{px:"1.5rem", py:".7rem ",bgcolor:"#4F45E4",mt:"1rem"}}>
                         CheckOut
                     </Button>
-                </div>
+                    </div>
             </div>
         </div>
     </div>

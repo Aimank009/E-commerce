@@ -3,7 +3,7 @@ import React from 'react'
 const AddressCard = () => {
   return (
     <div>
-        <div className='space-y-3'>
+        <div className='space-y-3 '>
             <p className='font-semibold '>Raam Kapoor</p>
             <p>Gorakhpur,Gita Vatika ,273001</p>
             <div className='space-y-1'>

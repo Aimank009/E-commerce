@@ -6,8 +6,12 @@ const app=express();
 app.use(express.json());
 app.use(cors());
 
+
 app.get('/',(req,res)=>{
-    res.send("Hello Aiman")
+    return res.status(200).send({
+        message:"Welcome",
+        staus:true
+    })
 })
 
 module.exports=app;

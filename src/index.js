@@ -1,5 +1,7 @@
 const express=require("express");
 const cors=require("cors");
+const authRouters=require('./routes/auth.route');
+const userRouters=require('./routes/user.route');
 
 const app=express();
 
@@ -14,4 +16,6 @@ app.get('/',(req,res)=>{
     })
 })
 
+app.use("/auth",authRouters)
+app.use("/users",userRouters)
 module.exports=app;

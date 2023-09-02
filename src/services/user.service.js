@@ -1,5 +1,6 @@
 const User = require("../models/user.model");
 const bcrypt = require("bcrypt");
+const jwtProvider = require("../config/jwtProvider");
 
 const saltRounds = 10;
 
@@ -19,38 +20,57 @@ const createUser = async (userData) => {
     console.log("Created User", user);
     return user;
   } catch (error) {
-    throw new Error(error.message)
+    throw new Error(error.message);
   }
 };
 
-
-const findUserById=async(userId)=>{
-    try {
-        const user=await User.findById(userId);
-        if(!user){
-            throw new Error("User not found with id:",userId)
-        }
-    } catch (error) {
-        throw new Error(error.message)
+const findUserById = async (userId) => {
+  try {
+    const user = await User.findById(userId).populate("address");
+    if (!user) {
+      throw new Error("User not found with id:", userId);
     }
-}
-const findUserByEmail=async(email)=>{
-    try {
-        const user=await User.findOne({email});
-        if(!user){
-            throw new Error("User not found with email:",email)
-        }
-    } catch (error) {
-        throw new Error(error.message)
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+const findUserByEmail = async (email) => {
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      throw new Error("User not found with email:", email);
     }
-}
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
 
-const getuserProfileByToken=async (token)=>{
-    try {
-        
-    } catch (error) {
-        
+const getuserProfileByToken = async (token) => {
+  try {
+    const userId = jwtProvider.getUserIdFromToken(token);
+    const user = await findUserById(userId);
+    if (!user) {
+      throw new Error("User not found with id:", userId);
     }
-}
+    return user;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
 
-module.exports={createUser,findUserById,findUserByEmail}
+const getAllUsers = async () => {
+  try {
+    const users = await User.find();
+    return users;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
+module.exports = {
+  createUser,
+  findUserById,
+  findUserByEmail,
+  getuserProfileByToken,
+  getAllUsers,
+};

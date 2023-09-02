@@ -9,6 +9,7 @@ import {
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
 import { deepPurple } from "@mui/material/colors";
 import navigation from "./NavigationData.js";
+import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -16,6 +17,9 @@ function classNames(...classes) {
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+  const navigate=useNavigate();
+
+
   const [openAuthModel, setOpenAuthModal] = useState(false);
   const [anchorE1, setAnchorE1] = useState(null);
   const openUserMenu = Boolean(anchorE1);
@@ -34,7 +38,7 @@ export default function Navigation() {
     setOpenAuthModal(false);
   };
   const handleCategoryClick = (category, section, item, close) => {
-    // navigate(`/${category.id} /${section.id}/  ${item.id}`);
+    navigate(`/${category.id}/${section.id}/${item.id}`);
     close();
   };
   return (
@@ -215,11 +219,7 @@ export default function Navigation() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p>
-
+      <header className="relative py-0.2 ">
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
@@ -313,7 +313,7 @@ export default function Navigation() {
                                           <p
                                             aria-hidden="true"
                                             className="mt-1"
-                                          >
+                                          >  
                                             Shop now
                                           </p>
                                         </div>
@@ -394,20 +394,21 @@ export default function Navigation() {
                           color: "white",
                           cursor: "pointer",
                         }}
-                      ></Avatar>
+                      >R</Avatar>
                       <Menu
                         id="basic-menu"
-                        anchorE1={anchorE1}
+                        anchorEl={anchorE1}
                         open={openUserMenu}
                         onClose={handleCloseUserMenu}
                         MenuListProps={{
                           "aria-labelledby": "basic-button",
                         }}
+                        
                       >
                         <MenuItem onClick={handleCloseUserMenu}>
                           Profile
                         </MenuItem>
-                        <MenuItem>My Order</MenuItem>
+                        <MenuItem onClick={()=>navigate('/account/order')}>My Order</MenuItem>
                         <MenuItem>Logout</MenuItem>
                       </Menu>
                     </div>
@@ -434,16 +435,18 @@ export default function Navigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                 <Button
+                  className="group -m-2 flex items-center p-2"
+                 >
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
+                      2
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
-                  </a>
+                    </Button>
                 </div>
               </div>
             </div>

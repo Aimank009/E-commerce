@@ -60,7 +60,8 @@ module.exports={
     createProduct,
     deleteProduct,
     getAllProducts,
-    findProductById
+    findProductById,
+    updateProduct
 }
 
 

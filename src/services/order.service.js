@@ -63,7 +63,7 @@ async function confirmedOrder(orderId) {
   return await order.save();
 }
 
-async function shipOrder(orderId) {
+async function shippOrder(orderId) {
   const order = await findOrderById(orderId);
 
   order.orderStatus = "SHIPPED";
@@ -121,10 +121,11 @@ async function deleteOrder(orderId){
 mosule.exports = {
   createOrder,
   palceOrder,
-  shipOrder,
+  shippOrder,
   deliverOrder,
   cancelledOrder,
   userOrderHistory,
   getAllOrders,
-  deleteOrder
+  deleteOrder,
+  confirmedOrder
 };

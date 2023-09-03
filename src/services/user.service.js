@@ -1,6 +1,6 @@
-const User = require("../models/user.model");
+const User = require("../models/user.model.js");
 const bcrypt = require("bcrypt");
-const jwtProvider = require("../config/jwtProvider");
+const jwtProvider = require("../config/jwtProvider.js");
 
 const saltRounds = 10;
 
@@ -26,20 +26,23 @@ const createUser = async (userData) => {
 
 const findUserById = async (userId) => {
   try {
-    const user = await User.findById(userId).populate("address");
+    const user = await User.findById(userId)
+    // .populate("address");
     if (!user) {
       throw new Error("User not found with id:", userId);
     }
+    return user;
   } catch (error) {
     throw new Error(error.message);
   }
 };
 const getUserByEmail = async (email) => {
   try {
-    const user = await User.findOne({ email });
+    const user = await User.findOne({email});
     if (!user) {
       throw new Error("User not found with email:", email);
     }
+    return user;
   } catch (error) {
     throw new Error(error.message);
   }
@@ -48,6 +51,7 @@ const getUserByEmail = async (email) => {
 const getuserProfileByToken = async (token) => {
   try {
     const userId = jwtProvider.getUserIdFromToken(token);
+    console.log(userId);
     const user = await findUserById(userId);
     if (!user) {
       throw new Error("User not found with id:", userId);

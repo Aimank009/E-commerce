@@ -1,7 +1,7 @@
-const userService=require("../services/user.service")
-const jwtProvider=require("../config/jwtProvider");
+const userService=require("../services/user.service.js")
+const jwtProvider=require("../config/jwtProvider.js");
 const bcrypt=require("bcrypt");
-const cartService=require("../services/cart.service")
+const cartService=require("../services/cart.service.js")
 const register=async (req,res)=>{
     try {
         const user=await userService.createUser(req.body);
@@ -9,7 +9,7 @@ const register=async (req,res)=>{
 
         await cartService.createCart(user);
 
-        return response.status(200).send({
+        return res.status(200).send({
             message:"Register Success",
             jwt
         })

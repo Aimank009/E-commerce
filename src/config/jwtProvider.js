@@ -3,6 +3,7 @@ const dotenv=require("dotenv").config();
 
 const generateToken=(userId)=>{
     const token=jwt.sign({userId},process.env.SECRET_KEY,{expiresIn:'24h'});
+    console.log(token)
     return token;
 };
 

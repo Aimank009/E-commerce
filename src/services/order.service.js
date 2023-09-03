@@ -126,4 +126,5 @@ mosule.exports = {
   cancelledOrder,
   userOrderHistory,
   getAllOrders,
+  deleteOrder
 };

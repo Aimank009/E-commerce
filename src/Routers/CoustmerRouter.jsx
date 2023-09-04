@@ -16,6 +16,8 @@ const CoustmerRouter = () => {
         <Navigation />
         </div>
         <Routes>
+          <Route path='/login' element={<HomePage/>}/>
+          <Route path='/register' element={<HomePage/>}/>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/cart' element={<Cart />}/>
             <Route path='/:lavelOne/:lavelTwo/:lavelThre' element={<Product/>}/>

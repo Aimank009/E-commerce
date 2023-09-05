@@ -1,7 +1,7 @@
 import React from "react";
 import MainCarosel from "../../components/HomeCarosel/MainCarosel.jsx";
 import HomeSectionCarosel from "../../components/HomeSectionCarosel/HomeSectionCarosel.jsx";
-import { mens_kurta } from "../../../Data/mens_kurtas";
+import { mens_kurta } from "../../../Data/Men/men_kurta.js";
 const HomePage = () => {
   return (
     <div>

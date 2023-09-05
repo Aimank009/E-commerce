@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { StarIcon } from "@heroicons/react/20/solid";
 import { RadioGroup } from "@headlessui/react";
 import Rating from "@mui/material/Rating"
 import { Button, Grid ,Box, LinearProgress} from "@mui/material";
 import ProductReviewCard from "./ProductReviewCard";
-import {mens_kurta} from "../../../Data/mens_kurtas"
+import {mens_kurta} from "../../../Data/Men/men_kurta.js"
 import HomeSectionCard from "../HomeSectionCard/HomeSectionCard.jsx"
 import { useNavigate } from "react-router-dom";
 
@@ -69,6 +69,9 @@ export default function Example() {
   const handleAddToCart=() =>{
       navigate('/cart')
   }
+useEffect(()=>{
+  
+},[])  
 
   return (
     <div className="bg-white lg:p-20">

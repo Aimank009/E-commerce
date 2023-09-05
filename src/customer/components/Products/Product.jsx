@@ -1,14 +1,17 @@
 
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
 import ProductCard from './ProductCard.jsx'
-import { mens_kurta } from '../../../Data/mens_kurtas'
-import { filters, singleFilter } from './FilterData'
-import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from '@mui/material'
+import { mens_kurta } from '../../../Data/Men/men_kurta.js'
+import { filters, singleFilter } from './FilterData.jsx'
+import { FormControl, FormControlLabel, FormLabel, Pagination, Radio, RadioGroup } from '@mui/material'
 import FilterListIcon from '@mui/icons-material/FilterList';
-import { useLocation, useNavigate} from "react-router-dom";
+import { useLocation, useNavigate, useParams} from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux'
+import { findProducts } from '../../../State/Product/Action.js'
+import kurta from "../../../Data/Kurta/kurta.js"
 const sortOptions = [
     { name: 'Price: Low to High', href: '#', current: false },
     { name: 'Price: High to Low', href: '#', current: false },
@@ -19,9 +22,31 @@ function classNames(...classes) {
 }
 
 export default function Product() {
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-  const location= useLocation()
-  const navigate=useNavigate();
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const jwt = localStorage.getItem("jwt");
+  const param = useParams();
+  const { product } = useSelector((store) => store);
+  const location = useLocation();
+  const [isLoaderOpen, setIsLoaderOpen] = useState(false);
+
+  const decodedQueryString = decodeURIComponent(location.search);
+  const searchParams = new URLSearchParams(decodedQueryString);
+  const colorValue = searchParams.get("color");
+  const sizeValue = searchParams.get("size");
+  const priceValue = searchParams.get("price");
+  const discount = searchParams.get("discount");
+  const sortValue = searchParams.get("sort");
+  const pageNumber = searchParams.get("page") || 1;
+  const stock = searchParams.get("stock");
+  
+  const handlePaginationChange = (event, value) => {
+    const searchParams = new URLSearchParams(location.search);
+    searchParams.set("page",value);
+    const query = searchParams.toString();
+    navigate({ search: `?${query}` });
+  };
 
   const handleFilter=(value,sectionId)=>{
     const searchParams=new URLSearchParams(location.search)
@@ -51,6 +76,35 @@ export default function Product() {
     navigate({search:`?${query}`})
   }
 
+  useEffect(() => {
+    const [minPrice, maxPrice] =
+      priceValue === null ? [0,0] : priceValue.split("-").map(Number);
+    const data = {
+      category: param.lavelThree, 
+      colors: colorValue ? colorValue.split(",") : [], 
+      sizes: sizeValue ? sizeValue.split(",") : [],
+      minPrice: minPrice || 0,
+      maxPrice: maxPrice || 10000,
+      minDiscount: discount || 0,
+      sort: sortValue || "price_low",
+      pageNumber: pageNumber,
+      pageSize: 8,
+      stock: stock,
+    };
+    dispatch(findProducts(data));
+  }, [
+    param.lavelThree,
+    colorValue,
+    sizeValue,
+    priceValue,
+    discount,
+    sortValue,
+    pageNumber,
+    stock,
+  ]);
+
+  
+  
   return (
     <div className="bg-white">
       <div>
@@ -310,11 +364,21 @@ export default function Product() {
               {/* Product grid */}
               <div className="lg:col-span-4 w-full">
                 <div className='flex flex-wrap justify-center bg-white py-5'>
-                    {mens_kurta.map((item)=><ProductCard product={item}/>)}
+                    {product.products?.content?.map((item)=><ProductCard product={item}/>)}
                 </div>
               </div>
             </div>
           </section>
+          <section className="w-full px-[3.6rem]">
+          <div className="mx-auto px-4 py-5 flex justify-center shadow-lg border rounded-md">
+            <Pagination
+              count={product.products?.totalPages}
+              color="primary"
+              className=""
+              onChange={handlePaginationChange}
+            />
+          </div>
+        </section>
         </main>
       </div>
     </div>

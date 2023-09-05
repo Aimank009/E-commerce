@@ -62,14 +62,14 @@ export const cartReducer = (state = initialState, action) => {
         return {
             ...state,
             loading:false,
-            cartItems:state.cartItems.map((item)=>item.id === action.payload.id ? action.payload:item
-            )
+            updateCartItems:action.payload
+            
         }  
     case REMOVE_CART_ITEM_SUCCESS:
         return{
             ...state,
             loading:false,
-            cartItems:state.cartItems.filter((item)=>item.id !== action.payload.id)
+            removeCartItems:action.payload
         } 
         
     case REMOVE_CART_ITEM_FAILURE:

@@ -27,7 +27,7 @@ export default function Product() {
   const dispatch = useDispatch();
   const jwt = localStorage.getItem("jwt");
   const param = useParams();
-  const { product } = useSelector((store) => store);
+  const { product} = useSelector((store) => store);
   const location = useLocation();
   const [isLoaderOpen, setIsLoaderOpen] = useState(false);
 

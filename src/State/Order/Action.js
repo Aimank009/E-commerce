@@ -6,9 +6,10 @@ import { useNavigate } from "react-router-dom"
 
 
 export const createOrder=(reqData)=>async(dispatch)=>{
-    console.log("req Date",reqData)
+    console.log("req Data",reqData)
     dispatch({type:CREATE_ORDER_REQUEST})
     try {
+        console.log("hello")
         const {data}=await api.post(`api/orders/`,reqData.address);
         if(data.id){
             reqData.navigate({search:`step=3&order_id${data.id}`})
@@ -16,6 +17,7 @@ export const createOrder=(reqData)=>async(dispatch)=>{
         console.log("created order -",data);
         dispatch({type:CREATE_ORDER_SUCCESS,payload:data})
     } catch (error) {
+        console.log("bur")
         dispatch({type:CREATE_ORDER_FAILURE,payload:error.message})
     }
 }

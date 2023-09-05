@@ -6,6 +6,7 @@ export const getCart=()=>async(dispatch)=>{
     try {
         const {data}=await api.get("api/cart/")
         dispatch({type:GET_CART_SUCCESS,payload:data})
+        console.log("cart",data)
     } catch (error) {
         dispatch({type:GET_CART_FAILURE,payload:error})
     }
@@ -14,19 +15,24 @@ export const getCart=()=>async(dispatch)=>{
 export const addItemToCart=(reqData)=>async(dispatch)=>{
  dispatch({type:ADD_ITEM_TO_CART_REQUEST});
  try {
-    const {data}=await api.put("api/cart/add",reqData.data)
+   console.log(reqData)
+    const {data}=await api.put("api/cart/add",reqData);
     dispatch({type:ADD_ITEM_TO_CART_SUCCESS,payload:data})
+    console.log("Added item to cart",data)
  } catch (error) {
-    dispatch({type:ADD_ITEM_TO_CART_FAILURE,payload:error})
+   console.log("hello")
+    dispatch({type:ADD_ITEM_TO_CART_FAILURE,error:error.message})
  }
 }
 
-export const removeCartItem=(reqData)=>async(dispatch)=>{
+export const removeCartItem=(cartItemId)=>async(dispatch)=>{
     dispatch({type:REMOVE_CART_ITEM_REQUEST});
     try {
-       const {data}=await api.delete(`api/cart_items/${reqData.cartItemId}`)
-       dispatch({type:REMOVE_CART_ITEM_SUCCESS,payload:data})
+       const {data}=await api.delete(`api/cart_items/${cartItemId}`)
+       dispatch({type:REMOVE_CART_ITEM_SUCCESS,payload:cartItemId})
+       console.log("remove",data)
     } catch (error) {
+    
        dispatch({type:ADD_ITEM_TO_CART_FAILURE,payload:error})
     }
 }
@@ -34,9 +40,12 @@ export const removeCartItem=(reqData)=>async(dispatch)=>{
 export const updateCartItem=(reqData)=>async (dispatch)=>{
     dispatch({type:UPDATE_CART_ITEM_REQUEST});
     try {
-       const {data}=await api.put(`api/cart_items/${reqData.cartItemId}`,reqData.data)
+        console.log("data",reqData.data)
+        console.log("cartItemId::::",reqData.cartItemId);
+       const {data}=await api.put(`/api/cart_items/${reqData.cartItemId}`,reqData.data)
        dispatch({type:UPDATE_CART_ITEM_SUCCESS,payload:data})
     } catch (error) {
+        console.log("bur")
        dispatch({type:UPDATE_CART_ITEM_FAILURE,payload:error})
     }
 }

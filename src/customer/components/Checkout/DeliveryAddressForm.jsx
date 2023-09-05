@@ -11,9 +11,10 @@ const DeliveryAddressForm = () => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const address = {
-      firstname: data.get("firstName"),
+      firstName: data.get("firstName"),
       lastName: data.get("lastName"),
       streetAddress: data.get("address"),
+      state:data.get("state"),
       city: data.get("city"),
       zipCode: data.get("zip"),
       mobile: data.get("phoneNumber"),

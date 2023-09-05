@@ -9,7 +9,6 @@ const Cart = () => {
 
     const navigate=useNavigate();
     const {cart}=useSelector((store)=>store)
-    console.log("cart is here",cart)
     const dispatch=useDispatch();
     const handleCheckOut=()=>{
         navigate("/checkout?step=2")
@@ -17,12 +16,16 @@ const Cart = () => {
 
     useEffect(()=>{
         dispatch(getCart())
-    },[cart.updateCartItem,cart.removeCartItem])
+    },[cart.cartItems])
   return (
     <div>
         <div className='lg:grid grid-cols-3 lg:px-16 relative  mt-10'>
-            <div className='col-span-2 '>
-                {cart.cart?.cartItems.map((item)=> <CartItem item={item}/>)}
+          <div className='col-span-2 '>
+          {cart.cart?.cartItems ? (
+    cart.cart.cartItems?.map((item) => <CartItem item={item} />)
+  ) : (
+    <p>Your cart is empty.</p>
+  )}
             </div>
             <div  className='px-5 sticky top-0 h-[100vh] mt-5 lg:mt-0 '>
                 <div className='border rounded-md shadow-lg p-2'>

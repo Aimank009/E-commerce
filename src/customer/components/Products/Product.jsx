@@ -87,10 +87,11 @@ export default function Product() {
       maxPrice: maxPrice || 10000,
       minDiscount: discount || 0,
       sort: sortValue || "price_low",
-      pageNumber: pageNumber || 1,
+      pageNumber: pageNumber,
       pageSize: 8,
       stock: stock,
     };
+    console.log("data---",data)
     dispatch(findProducts(data));
   }, [
     param.lavelThree,

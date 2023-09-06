@@ -14,16 +14,14 @@ import { Card } from '@mui/material';
 
 
 
-const ProductsTable = () => {
+const ProductTableView = () => {
 
 const dispatch=useDispatch();
 const {products}=useSelector(store=>store);
 
 console.log("products-----",products);
 
-const handleProductDelete=(productId)=>{
-  dispatch(deleteProduct(productId))
-}
+
   useEffect(() => {
   
     const data = {
@@ -46,7 +44,7 @@ const handleProductDelete=(productId)=>{
     <div className='p-5'>
 
     <Card className='mt-2 shadow-lg border border-gray-200'  >
-    <CardHeader title='All Products' />
+    <CardHeader title='Recent Products' />
     <TableContainer sx={{}} component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -56,12 +54,11 @@ const handleProductDelete=(productId)=>{
             <TableCell align="left">Category</TableCell>
             <TableCell align="left">Price</TableCell>
             <TableCell align="left">Quantity</TableCell>
-            <TableCell align="left">Delete</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {products.products.content ? (
-              products.products.content.slice(0).map((item) => (
+              products.products.content.slice(0,5).map((item) => (
             <TableRow
               key={item.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -75,11 +72,6 @@ const handleProductDelete=(productId)=>{
               <TableCell align="left">{item.category.name}</TableCell>
               <TableCell align="left">{item.price}</TableCell>
               <TableCell align="left">{item.quantity}</TableCell>
-              <TableCell align="left">
-                <Button onClick={()=>handleProductDelete(item._id)} variant='outlined'>
-                    Delete
-                </Button>
-              </TableCell>
             </TableRow>
           ))):(
             <TableRow>
@@ -97,4 +89,4 @@ const handleProductDelete=(productId)=>{
   )
 }
 
-export default ProductsTable
+export default ProductTableView

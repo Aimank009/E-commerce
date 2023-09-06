@@ -15,7 +15,7 @@ const trophyImage=styled("img")({
 })
 const Achievment = () => {
   return (
-    <Card className='space-y-5' sx={{position:'relative',bgcolor:'#242B2E',color:'white',}} >
+    <Card className='space-y-5' sx={{position:'relative'}} >
         <CardContent>
             <Typography variant='h6' sx={{letterSpacing:".25px"}} >Aiman Khan</Typography>
             <Typography variant='body2'>Congratulations 🥳</Typography>

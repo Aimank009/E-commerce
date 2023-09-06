@@ -10,14 +10,12 @@ const LoginForm = () => {
   const handleSumbit = (event) => {
     event.preventDefault();
     const data=new FormData(event.currentTarget);
-
+    
     const userData={
         email:data.get("email"),
         password:data.get("password")
     }
     dispatch(login(userData));
-    
-    console.log("userData",userData)
   };
   return (
     <div>

@@ -12,7 +12,11 @@ const OrderSummary = () => {
   const location=useLocation();
   const {order}=useSelector((store)=>store)
   const searchParams=new URLSearchParams(location.search)
-  const orderId=searchParams.get("order_id")
+  const orderId=searchParams.get("order_id");
+
+  const handleCheckOut=()=>{
+    navigate("/payment")
+  }
   useEffect(()=>{
     console.log(orderId)
     dispatch(getOrderById(orderId))
@@ -58,7 +62,7 @@ const OrderSummary = () => {
             </div>
 
             <Button
-              
+              onClick={handleCheckOut}
               variant="contained"
               type="submit"
               sx={{ padding: ".8rem 2rem", marginTop: "2rem", width: "100%" }}

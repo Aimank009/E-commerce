@@ -5,24 +5,24 @@ export const lengha_page1 = [
     "brand": "AstonBlue",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Yellow",
-    discountedPrice: "₹35,999",
-    price: "₹39,999",
-    size: [
+    "discountedPrice": "₹35,999",
+    "price": "₹39,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "10% off",
-    description:
+    "description":
       "Yellow Readymade Lehenga in Net fabric  The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupattaComes with the Koskii promise of premium quality",
       "topLavelCategory": "Women",
       "secondLavelCategory": "Clothing",
@@ -34,24 +34,24 @@ export const lengha_page1 = [
     "brand": "rayie collection",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black",
-    discountedPrice: "₹19,124",
-    price: "₹35,999",
-    size: [
+    "discountedPrice": "₹19,124",
+    "price": "₹35,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "46% off",
-    description:
+    "description":
     "Yellow Readymade Lehenga in Net fabric  The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupattaComes with the Koskii promise of premium quality",
   },
   {
@@ -60,24 +60,24 @@ export const lengha_page1 = [
     "brand": "Liva",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black",
-    discountedPrice: "₹13,999",
-    price: "₹20,000",
-    size: [
+    "discountedPrice": "₹13,999",
+    "price": "₹20,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "30% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -85,20 +85,20 @@ export const lengha_page1 = [
     "brand": "soch",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Yellow",
-    discountedPrice: "₹12,998",
-    price: "",
-    size: [
+    "discountedPrice": "₹12,998",
+    "price": "",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "",
@@ -109,24 +109,24 @@ export const lengha_page1 = [
     "brand": "Liva",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Green",
-    discountedPrice: "₹9,999",
-    price: "₹18,000",
-    size: [
+    "discountedPrice": "₹9,999",
+    "price": "₹18,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "44% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -134,20 +134,20 @@ export const lengha_page1 = [
     "brand": "soch",
    "title": "Solid Stitched Lehenga Choli",
     "color": "Dark Blue",
-    discountedPrice: "₹9,998",
-    price: "",
-    size: [
+    "discountedPrice": "₹9,998",
+    "price": "",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "30% off",
@@ -159,24 +159,24 @@ export const lengha_page1 = [
     "brand": "AMINIA",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹8,600",
-    price: "₹10,950",
-    size: [
+    "discountedPrice": "₹8,600",
+    "price": "₹10,950",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "21% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -184,24 +184,24 @@ export const lengha_page1 = [
     "brand": "mjo fashion",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹7,999",
-    price: "₹9,550",
-    size: [
+    "discountedPrice": "₹7,999",
+    "price": "₹9,550",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "16% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -209,24 +209,24 @@ export const lengha_page1 = [
     "brand": "rashora",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Gold, Orange",
-    discountedPrice: "₹7,999",
+    "discountedPrice": "₹7,999",
     price: "₹9,999",
-    size: [
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "20% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -234,24 +234,24 @@ export const lengha_page1 = [
     "brand": "Vervee Couture",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Blue",
-    discountedPrice: "₹7,629",
-    price: "₹15,239",
-    size: [
+    "discountedPrice": "₹7,629",
+    "price": "₹15,239",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "49% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -259,24 +259,24 @@ export const lengha_page1 = [
     "brand": "soch",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹6,999",
-    price: "₹13,998",
-    size: [
+    "discountedPrice": "₹6,999",
+    "price": "₹13,998",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "50% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -284,24 +284,24 @@ export const lengha_page1 = [
     "brand": "kajtosh",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Red",
-    discountedPrice: "₹6,599",
-    price: "₹33,999",
-    size: [
+    "discountedPrice": "₹6,599",
+    "price": "₹33,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "80% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -309,24 +309,24 @@ export const lengha_page1 = [
     "brand": "soch",
    "title": "Embroidered Stitched Lehenga Choli",
     "color": "Green",
-    discountedPrice: "₹5,999",
-    price: "₹14,998",
-    size: [
+    "discountedPrice": "₹5,999",
+    "price": "₹14,998",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "60% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -334,24 +334,24 @@ export const lengha_page1 = [
     "brand": "LIBAS",
    "title": "Solid Stitched Lehenga Choli",
     "color": "Green",
-    discountedPrice: "₹5,439",
-    price: "₹7,999",
-    size: [
+    "discountedPrice": "₹5,439",
+    "price": "₹7,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "32% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -359,24 +359,24 @@ export const lengha_page1 = [
     "brand": "PERHAPS",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black, Grey",
-    discountedPrice: "₹5,240",
-    price: "₹13,000",
-    size: [
+    "discountedPrice": "₹5,240",
+    "price": "₹13,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "59% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -384,24 +384,24 @@ export const lengha_page1 = [
     "brand": "PERHAPS",
    "title": "Embroidered, Embellished Stitched Lehenga Choli",
     "color": "Multicolor",
-    discountedPrice: "₹5,000",
-    price: "₹13,000",
-    size: [
+    "discountedPrice": "₹5,000",
+    "price": "₹13,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "61% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -409,24 +409,24 @@ export const lengha_page1 = [
     "brand": "Bhavyam",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Light Blue",
-    discountedPrice: "₹4,999",
-    price: "₹14,999",
-    size: [
+    "discountedPrice": "₹4,999",
+    "price": "₹14,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "66% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -434,24 +434,24 @@ export const lengha_page1 = [
     "brand": "Shivanya Fashion",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Purple",
-    discountedPrice: "₹4,999",
-    price: "₹9,999",
-    size: [
+    "discountedPrice": "₹4,999",
+    "price": "₹9,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "50% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -459,24 +459,24 @@ export const lengha_page1 = [
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Light Blue, Multicolor",
-    discountedPrice: "₹4,999",
-    price: "₹14,999",
-    size: [
+    "discountedPrice": "₹4,999",
+    "price": "₹14,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "66% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -484,24 +484,24 @@ export const lengha_page1 = [
     "brand": "VAMSE",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Pink",
-    discountedPrice: "₹4,999",
-    price: "₹14,999",
-    size: [
+    "discountedPrice": "₹4,999",
+    "price": "₹14,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "66% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -509,24 +509,24 @@ export const lengha_page1 = [
     "brand": "ABCD",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Multicolor",
-    discountedPrice: "₹4,920",
-    price: "₹8,000",
-    size: [
+    "discountedPrice": "₹4,920",
+    "price": "₹8,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "38% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -534,24 +534,24 @@ export const lengha_page1 = [
     "brand": "Shivanya Fashion",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Green",
-    discountedPrice: "₹4,599",
-    price: "₹8,999",
-    size: [
+    "discountedPrice": "₹4,599",
+    "price": "₹8,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "48% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -559,24 +559,24 @@ export const lengha_page1 = [
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
-    discountedPrice: "₹4,599",
-    price: "₹11,999",
-    size: [
+    "discountedPrice": "₹4,599",
+    "price": "₹11,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "61% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -584,24 +584,24 @@ export const lengha_page1 = [
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
-    discountedPrice: "₹4,599",
-    price: "₹11,999",
-    size: [
+    "discountedPrice": "₹4,599",
+    "price": "₹11,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "61% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -609,24 +609,24 @@ export const lengha_page1 = [
     "brand": "Hathka",
    "title": "Self Design Semi Stitched Rajasthani Poshak",
     "color": "Purple, Yellow",
-    discountedPrice: "₹4,550",
-    price: "₹5,500",
-    size: [
+    "discountedPrice": "₹4,550",
+    "price": "₹5,500",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "17% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -634,24 +634,24 @@ export const lengha_page1 = [
     "brand": "CAMPAIGN TRENDS",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
-    discountedPrice: "₹4,549",
-    price: "₹15,499",
-    size: [
+    "discountedPrice": "₹4,549",
+    "price": "₹15,499",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "70% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -659,24 +659,24 @@ export const lengha_page1 = [
     "brand": "KIYA",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Black",
-    discountedPrice: "₹4,504",
-    price: "₹13,239",
-    size: [
+    "discountedPrice": "₹4,504",
+    "price": "₹13,239",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "65% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -684,24 +684,24 @@ export const lengha_page1 = [
     "brand": "Geetanjali",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Yellow",
-    discountedPrice: "₹4,500",
-    price: "₹10,000",
-    size: [
+    "discountedPrice": "₹4,500",
+    "price": "₹10,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "55% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -709,24 +709,24 @@ export const lengha_page1 = [
     "brand": "Rajshree Fashion Fab",
    "title": "Embroidered, Embellished Semi Stitched Lehenga Choli",
     "color": "Red",
-    discountedPrice: "₹4,500",
-    price: "₹9,999",
-    size: [
+    "discountedPrice": "₹4,500",
+    "price": "₹9,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "54% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -734,24 +734,24 @@ export const lengha_page1 = [
     "brand": "Geetanjali",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Orange",
-    discountedPrice: "₹4,500",
-    price: "₹10,000",
-    size: [
+    "discountedPrice": "₹4,500",
+    "price": "₹10,000",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "55% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -759,24 +759,24 @@ export const lengha_page1 = [
     "brand": "DIVENA",
    "title": "Printed Stitched Lehenga Choli",
     "color": "Red",
-    discountedPrice: "₹4,499",
-    price: "₹11,999",
-    size: [
+    "discountedPrice": "₹4,499",
+    "price": "₹11,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "62% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -784,24 +784,24 @@ export const lengha_page1 = [
     "brand": "soch",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Red",
-    discountedPrice: "₹4,499",
-    price: "₹8,998",
-    size: [
+    "discountedPrice": "₹4,499",
+    "price": "₹8,998",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "50% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -809,24 +809,24 @@ export const lengha_page1 = [
     "brand": "LookNbook art",
    "title": "Printed Semi Stitched Lehenga Choli",
     "color": "Dark Blue",
-    discountedPrice: "₹4,499",
-    price: "₹5,400",
-    size: [
+    "discountedPrice": "₹4,499",
+    "price": "₹5,400",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "16% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -834,24 +834,24 @@ export const lengha_page1 = [
     "brand": "FESTIVE SHOPEE",
    "title": "Embroidered, Embellished, Self Design Stitched Lehenga ...",
     "color": "Blue",
-    discountedPrice: "₹4,499",
-    price: "₹7,449",
-    size: [
+    "discountedPrice": "₹4,499",
+    "price": "₹7,449",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "39% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -859,24 +859,24 @@ export const lengha_page1 = [
     "brand": "CAMPAIGN TRENDS",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Purple",
-    discountedPrice: "₹4,399",
-    price: "₹14,799",
-    size: [
+    "discountedPrice": "₹4,399",
+    "price": "₹14,799",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "70% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -884,24 +884,24 @@ export const lengha_page1 = [
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹4,389",
-    price: "₹17,196",
-    size: [
+    "discountedPrice": "₹4,389",
+    "price": "₹17,196",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "74% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -909,24 +909,24 @@ export const lengha_page1 = [
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹4,389",
-    price: "₹17,196",
-    size: [
+    "discountedPrice": "₹4,389",
+    "price": "₹17,196",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "74% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -934,24 +934,24 @@ export const lengha_page1 = [
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹4,389",
-    price: "₹17,196",
-    size: [
+    "discountedPrice": "₹4,389",
+    "price": "₹17,196",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "74% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -959,24 +959,24 @@ export const lengha_page1 = [
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
-    discountedPrice: "₹4,389",
-    price: "₹17,196",
-    size: [
+    "discountedPrice": "₹4,389",
+    "price": "₹17,196",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
-        name: "L",
-        quantity: 50,
+        "name": "L",
+        "quantity": 50,
       },
     ],
     "discountPersent": "74% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
     "imageUrl":
@@ -984,23 +984,23 @@ export const lengha_page1 = [
     "brand": "Love Purple",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Black",
-    discountedPrice: "₹4,299",
-    price: "₹5,999",
-    size: [
+    "discountedPrice": "₹4,299",
+    "price": "₹5,999",
+    "size": [
       {
-        name: "S",
-        quantity: 20,
+        "name": "S",
+        "quantity": 20,
       },
       {
-        name: "M",
-        quantity: 30,
+        "name": "M",
+        "quantity": 30,
       },
       {
         name: "L",
-        quantity: 50,
+        "quantity": 50,
       },
     ],
     "discountPersent": "28% off",
-    description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
+    "description":"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
 ];

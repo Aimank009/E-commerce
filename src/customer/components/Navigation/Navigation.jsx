@@ -29,8 +29,13 @@ export default function Navigation() {
   const openUserMenu = Boolean(anchorE1);
   const jwt = localStorage.getItem("jwt");
   const {auth}=useSelector(store=>store);
+  const {order}=useSelector(store=>store)
+  console.log("order....",order)
   const dispatch=useDispatch();
 
+  const handleCartClick=()=>{
+    navigate("/cart")
+  }
   const handleUserClick = (event) => {
     setAnchorE1(event.currentTarget);
   };
@@ -264,11 +269,11 @@ export default function Navigation() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
+                <a href="/">
+                  <span className="sr-only">My Cart</span>
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    className="h-20 w-auto"
+                    src="https://media.istockphoto.com/id/1184670036/vector/shopping-cart-line-icon-fast-buy-vector-logo.jpg?s=612x612&w=0&k=20&c=zyExmQoKgH4UZTwMa41Zo9x1TzQYcQy_5zQcHaEL0SQ="
                     alt=""
                   />
                 </a>
@@ -463,7 +468,7 @@ export default function Navigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                 <Button
+                 <Button onClick={handleCartClick}
                   className="group -m-2 flex items-center p-2"
                  >
                     <ShoppingBagIcon
@@ -471,7 +476,7 @@ export default function Navigation() {
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      2
+                      
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                     </Button>

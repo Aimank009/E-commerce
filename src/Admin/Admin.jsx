@@ -1,6 +1,6 @@
 import { CssBaseline, Drawer, ListItemText, useTheme } from "@mui/material";
 import { Box, List, ListItem, ListItemButton, ListItemIcon, Toolbar, useMediaQuery } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import EmailIcon from '@mui/icons-material/Email';
 import ArchiveIcon from '@mui/icons-material/Archive';
@@ -14,6 +14,8 @@ import CreateProductForm from "./components/CreateProductForm.jsx";
 import ProductsTable from "./components/ProductsTable.jsx";
 import OrderTable from "./components/OrderTable.jsx";
 import CustomersTable from "../Admin/components/CustomersTable.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import { getUser, logout } from "../State/Auth/Action.js";
 
 const menu = [
   { name: "Dashboard", path: "/admin",icon:<DashboardCustomizeIcon/> },
@@ -27,8 +29,26 @@ const Admin = () => {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
   const [sideBarVisible, setSideBarVisible] = useState(false);
-  const navigate = useNavigate();
 
+
+  const navigate=useNavigate();
+  const dispatch=useDispatch()
+  const {auth}=useSelector(store=>store);
+
+  const handleLogout = () => {
+   
+    dispatch(logout());
+    navigate("/")
+
+  };
+
+  const jwt = localStorage.getItem("jwt");
+
+  useEffect(() => {
+    if (jwt) {
+      dispatch(getUser(jwt));
+    }
+  }, [jwt]);
   const drawer = (
     <Box
       sx={{

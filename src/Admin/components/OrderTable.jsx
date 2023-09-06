@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getOrders } from "../../State/Admin/Order/Action";
+import {
+  confirmOrder,
+  deleteOrder,
+  deliveredOrder,
+  getOrders,
+  shipOrder,
+} from "../../State/Admin/Order/Action";
 import {
   Avatar,
   AvatarGroup,
@@ -35,9 +41,37 @@ const OrderTable = () => {
 
   useEffect(() => {
     dispatch(getOrders());
-  }, []);
+  }, [
+    adminOrder.confirmed,
+    adminOrder.shipped,
+    adminOrder.delivered,
+    adminOrder.canceled,
+  ]);
 
   console.log("admin Order----", adminOrder);
+
+  const handleShippedOrder = (orderId) => {
+    dispatch(shipOrder(orderId));
+    console.log("handle shipped order",orderId)
+    handleClose();
+  };
+
+  const handleconfirmedOrder = (orderId) => {
+    dispatch(confirmOrder(orderId));
+    console.log("handle confirmed order",orderId);
+    handleClose();
+  };
+
+  const handleDeliveredOrder = (orderId) => {
+    dispatch(deliveredOrder(orderId));
+    handleClose();
+  };
+
+  const handleDeleteOrder = (orderId) => {
+    dispatch(deleteOrder(orderId));
+    handleClose();
+  };
+
   return (
     <div className="p-5">
       <Card className="mt-2 shadow-lg border border-gray-200">
@@ -80,12 +114,12 @@ const OrderTable = () => {
                       <span
                         className={`${
                           item.orderStatus == "CONFIRMED"
-                            ? "bg-green"
+                            ? "bg-green-800"
                             : item.orderStatus == "SHIPPED"
                             ? "bg-blue-600"
-                            : item.orderStatus =="PLACED"
+                            : item.orderStatus == "PLACED"
                             ? "bg-[#02B290]"
-                            : item.orderStatus =="PENDING"
+                            : item.orderStatus == "PENDING"
                             ? "bg-yellow-600"
                             : "bg-red-600"
                         } px-5 py-3 text-[0.85rem] rounded rounded-xl text-white`}
@@ -112,18 +146,29 @@ const OrderTable = () => {
                           "aria-labelledby": "basic-button",
                         }}
                       >
-                        <MenuItem onClick={handleClose}>
+                        <MenuItem
+                          onClick={() => handleconfirmedOrder(item._id)}
+                        >
                           Confirmed Order
                         </MenuItem>
-                        <MenuItem onClick={handleClose}>Shipped Order</MenuItem>
-                        <MenuItem onClick={handleClose}>
+                        <MenuItem onClick={() => handleShippedOrder(item._id)}>
+                          Shipped Order
+                        </MenuItem>
+                        <MenuItem
+                          onClick={() => handleDeliveredOrder(item._id)}
+                        >
                           Delivered Order
                         </MenuItem>
                       </Menu>
                     </TableCell>
 
                     <TableCell align="left">
-                      <Button variant="outlined">Delete</Button>
+                      <Button
+                        onClick={() => handleDeleteOrder(item._id)}
+                        variant="outlined"
+                      >
+                        Delete
+                      </Button>
                     </TableCell>
                   </TableRow>
                 ))

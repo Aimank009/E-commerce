@@ -87,7 +87,7 @@ export default function Product() {
       maxPrice: maxPrice || 10000,
       minDiscount: discount || 0,
       sort: sortValue || "price_low",
-      pageNumber: pageNumber,
+      pageNumber: pageNumber || 1,
       pageSize: 8,
       stock: stock,
     };

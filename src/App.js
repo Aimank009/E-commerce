@@ -1,5 +1,6 @@
 
 import './App.css';
+import AdminRouters from './Routers/AdminRouters';
 import CoustmerRouter from './Routers/CoustmerRouter';
 import Cart from './customer/components/Cart/Cart';
 import Checkout from './customer/components/Checkout/Checkout';
@@ -17,6 +18,7 @@ function App() {
 
       <Routes>
         <Route path='/*' element={<CoustmerRouter/>}/>
+        <Route path='/admin/*' element={<AdminRouters/>}/>
       </Routes>
       
     </div>

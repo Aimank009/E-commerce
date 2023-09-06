@@ -19,6 +19,7 @@ import {
 } from "./ActionType.js";
 import {API_BASE_URL, api} from "../../config/apiConfig.js";
 import { mens_kurta } from "../../Data/Men/men_kurta.js";
+import { ConsoleLine } from "mdi-material-ui";
 
 export const findProducts = (reqData) => async (dispatch) => {
   const {
@@ -36,7 +37,6 @@ export const findProducts = (reqData) => async (dispatch) => {
 
   try {
     dispatch({ type: FIND_PRODUCTS_BY_CATEGORY_REQUEST });
-    console.log(reqData.minDiscount);
     const { data } = await api.get(
       `api/products?category=${category}&color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}&minDiscount=${minDiscount}`
     );
@@ -62,6 +62,7 @@ export const findProductsById = (reqData) => async (dispatch) => {
     console.log("products by  id : ", data);
     dispatch({type: FIND_PRODUCT_BY_ID_SUCCESS,payload: data,});
   } catch (error) {
+    console.log("hello");
     dispatch({
       type: FIND_PRODUCT_BY_ID_FAILURE,
       payload:error
@@ -87,10 +88,7 @@ export const createProduct = (product) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: CREATE_PRODUCT_FAILURE,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload: error.message,
     });
   }
 };

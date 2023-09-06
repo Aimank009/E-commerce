@@ -48,7 +48,7 @@ const getAllProducts=async(req,res)=>{
 
 const createMultipleProducts=async(req,res)=>{
     try {
-        const product=await productService.findProductById(req.body)
+        const product=await productService.createMultipleProducts(req.body)
         return res.status(201).send({message:"products created sucessfully"})
     } catch (error) {
         return res.status(500).send({error:error.message})

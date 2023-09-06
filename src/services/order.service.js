@@ -1,47 +1,69 @@
 const cartService = require("./cart.service.js");
 const Address = require("../models/address.model.js");
-const OrderItems = require("../models/OrderItems.js");
+const OrderItem = require("../models/OrderItems.js");
 const Order = require("../models/order.model.js");
 
 async function createOrder(user, shippAddress) {
   let address;
-
   if (shippAddress._id) {
-    let existAddress = await address.findById(shippAddress);
-    address = existAddress;
+    let existedAddress = await Address.findById(shippAddress._id);
+    
+    address = existedAddress;
   } else {
     address = new Address(shippAddress);
     address.user = user;
-    await address.save();
+    
+    console.log(address)
+    try {
+      await address.save();
+      // Handle success
+    } catch (error) {
+      // Handle error
+      console.error("Error saving address:", error);
+    }
 
-    user.address.push(address);
+    user.addresses .push(address)
     await user.save();
   }
+
   const cart = await cartService.findUserCart(user._id);
-  const orderItem = [];
+  const orderItems = [];
 
   for (const item of cart.cartItems) {
-    const orderItem = new OrderItems({
+    const orderItem = new OrderItem({
       price: item.price,
       product: item.product,
       quantity: item.quantity,
       size: item.size,
       userId: item.userId,
-      discountprice: item.discountedPrice,
+      discountedPrice: item.discountedPrice,
     });
+
+
     const createdOrderItem = await orderItem.save();
-    await OrderItems.push(createdOrderItem);
+    orderItems.push(createdOrderItem);
   }
+
   const createdOrder = new Order({
     user,
-    OrderItems,
+    orderItems,
     totalPrice: cart.totalPrice,
     totalDiscountedPrice: cart.totalDiscountedPrice,
-    discount: cart.discount,
-    totalItem: cart.totalItems,
+    discounte: cart.discounte,
+    totalItem: cart.totalItem,
     shippingAddress: address,
+    orderDate: new Date(),
+    orderStatus: "PENDING", // Assuming OrderStatus is a string enum or a valid string value
+    "paymentDetails.status": "PENDING", // Assuming PaymentStatus is nested under 'paymentDetails'
+    createdAt: new Date(),
   });
-  const savedOrder = await createOrder.save();
+
+  const savedOrder = await createdOrder.save();
+
+  // for (const item of orderItems) {
+  //   item.order = savedOrder;
+  //   await item.save();
+  // }
 
   return savedOrder;
 }
@@ -92,6 +114,8 @@ async function findOrderById(orderId) {
     .populate("user")
     .populate({ path: "orderItems", populate: { path: "product" } })
     .populate("shippingAddress");
+    
+    console.log("buir bur bunr bubr bunbr burb bu5brubr")
 
   return order;
 }
@@ -118,7 +142,7 @@ async function deleteOrder(orderId){
     await Order.findByIdAndDelete(order._id)
 }
 
-mosule.exports = {
+module.exports = {
   createOrder,
   palceOrder,
   shippOrder,
@@ -127,5 +151,6 @@ mosule.exports = {
   userOrderHistory,
   getAllOrders,
   deleteOrder,
-  confirmedOrder
+  confirmedOrder,
+  findOrderById
 };

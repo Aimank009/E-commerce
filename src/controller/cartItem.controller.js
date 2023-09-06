@@ -1,9 +1,13 @@
+const User = require("../models/user.model.js");
 const cartItemService=require("../services/cartItem.service.js");
 
 const updateCartItem=async (req,res)=>{
-    const user=req.user;
+
+   const user= await req.user
+   
     try {
-        const updateCartItem=await cartItemService.updateCartItem(user._id,req.params.id,req,body);
+       
+        const updateCartItem=await cartItemService.updateCartItem(user._id,req.params.id,req.body);
         return res.status(200).send(updateCartItem)
     } catch (error) {
         return res.status(500).send({error:error.message})
@@ -11,7 +15,7 @@ const updateCartItem=async (req,res)=>{
 }
 
 const removeCartItem=async (req,res)=>{
-    const user=req.user;
+    const user=await req.user;
     try {
         const removeCartItem=await cartItemService.removeCartItem(user._id,req.params.id);
         return res.status(200).send({message:"cart item removed sucessfully"})

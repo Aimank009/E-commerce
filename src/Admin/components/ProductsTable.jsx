@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useDispatch, useSelector } from 'react-redux';
-import { findProducts } from '../../State/Product/Action.js';
+import { deleteProduct, findProducts } from '../../State/Product/Action.js';
 import { Avatar, Button, CardHeader } from '@mui/material';
 import { Card } from '@mui/material';
 
@@ -21,6 +21,9 @@ const {products}=useSelector(store=>store);
 
 console.log("products-----",products);
 
+const handleProductDelete=(productId)=>{
+  dispatch(deleteProduct(productId))
+}
   useEffect(() => {
   
     const data = {
@@ -36,7 +39,7 @@ console.log("products-----",products);
       stock:"",
     };
     dispatch(findProducts(data));
-  }, []);
+  }, [products.deletedProduct]);
 
   console.log("bur ------",products.products.content)
   return (
@@ -73,14 +76,14 @@ console.log("products-----",products);
               <TableCell align="left">{item.price}</TableCell>
               <TableCell align="left">{item.quantity}</TableCell>
               <TableCell align="left">
-                <Button variant='outlined'>
+                <Button onClick={()=>handleProductDelete(item._id)} variant='outlined'>
                     Delete
                 </Button>
               </TableCell>
             </TableRow>
           ))):(
             <TableRow>
-              <TableCell colSpan={5}>No products found</TableCell>
+              <TableCell colSpan={5}>Loading...</TableCell>
             </TableRow>
           )}
         </TableBody>

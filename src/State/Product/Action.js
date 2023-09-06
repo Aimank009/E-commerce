@@ -75,10 +75,12 @@ export const createProduct = (product) => async (dispatch) => {
     dispatch({ type: CREATE_PRODUCT_REQUEST });
 
     const { data } = await api.post(
-      `${API_BASE_URL}/api/admin/products/`,
-      product.data
+      `${API_BASE_URL}api/admin/products/`,
+      product
     );
 
+
+    console.log("created product -----",data)
     dispatch({
       type: CREATE_PRODUCT_SUCCESS,
       payload: data,
@@ -124,12 +126,14 @@ export const deleteProduct = (productId) => async (dispatch) => {
 
     let {data}=await api.delete(`/api/admin/products/${productId}`);
 
+   
     console.log("delete product ",data)
-
     dispatch({
       type: DELETE_PRODUCT_SUCCESS,
       payload: productId,
     });
+
+    
 
     console.log("product delte ",data)
   } catch (error) {

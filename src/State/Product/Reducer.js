@@ -67,7 +67,7 @@ export const customerProductReducer = (state = initialState, action) => {
         return {
           ...state,
           loading: false,
-          products: state.products.map((product) =>
+          roducts: state.products.map((product) =>
             product.id === action.payload.id ? action.payload : product
           ),
         };
@@ -84,13 +84,12 @@ export const customerProductReducer = (state = initialState, action) => {
           error: null,
         };
       case DELETE_PRODUCT_SUCCESS:
-        console.log("dlete ",state.products)
+        console.log("delete ",state.products)
         return {
           ...state,
           loading: false,
-          deleteProduct:action.payload
-          
-          
+          error:null,
+          deletedProduct: action.payload
         };
       case DELETE_PRODUCT_FAILURE:
         return {

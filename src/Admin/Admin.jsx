@@ -77,13 +77,13 @@ const Admin = () => {
         
           <div>
 
-            <div className="flex h-full">
+            <div className="flex h-full ">
               <CssBaseline/>
-              <div className="w-[15%] border border-r-gray-300 h-full">
+              <div className="w-[15%] border border-r-gray-300 h-full fixed top-0">
                 {drawer}
               </div>
 
-              <div className="w-[85%]  " >
+              <div className="w-[85%] h-full ml-[15%]  " >
                 <Routes>
                     <Route path="/" element={<Dashboard/>}></Route>
                     <Route path="/product/create" element={<CreateProductForm/>}></Route>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import Cart from "../Cart/Cart";
 import OrderCard from "./OrderCard";
-
+import { useDispatch, useSelector } from "react-redux";
+import {getOrderHistory} from "../../../State/Order/Action.js"
 const orderStatus = [
   { label: "On the way", value: "on_the_way" },
   { label: "Delivered", value: "delivered" },
@@ -10,6 +11,15 @@ const orderStatus = [
   { label: "Returned", value: "returned" },
 ];
 const Order = () => {
+
+  const dispatch = useDispatch();
+  const jwt = localStorage.getItem("jwt");
+  const {order}=useSelector(store=>store);
+  console.log("..........",jwt)
+  useEffect(() => {
+    dispatch(getOrderHistory({ jwt }));
+  }, [jwt]);
+
   return (
     <div className="px-5 lg:px-20">
       <Grid container sx={{ justifyContent: "space-between" }}>

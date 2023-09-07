@@ -35,7 +35,7 @@ const handleProductDelete=(productId)=>{
       minDiscount: 0,
       sort: "price_low",
       pageNumber:null,
-      pageSize:10,
+      pageSize:10000,
       stock:"",
     };
     dispatch(findProducts(data));

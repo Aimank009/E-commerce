@@ -97,17 +97,17 @@ const OrderTableView = () => {
                     <TableCell>
                       <AvatarGroup sx={{ justifyContent: "start" }}>
                         {item.orderItems.map((orderItem) => (
-                          <Avatar src={orderItem.product.imageUrl}></Avatar>
+                          <Avatar src={orderItem.product?.imageUrl}></Avatar>
                         ))}
                       </AvatarGroup>
                     </TableCell>
                     <TableCell align="left" scope="row">
                       {item.orderItems.map((orderItem) => (
-                        <p>{orderItem.product.title}</p>
+                        <p>{orderItem.product?.title}</p>
                       ))}
                     </TableCell>
-                    <TableCell align="left">{item._id}</TableCell>
-                    <TableCell align="left">{item.totalPrice}</TableCell>
+                    <TableCell align="left">{item?._id}</TableCell>
+                    <TableCell align="left">{item?.totalPrice}</TableCell>
                     <TableCell align="left">
                       <span
                         className={`${

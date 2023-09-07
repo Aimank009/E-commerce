@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# My Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
 
-### `npm start`
+1. Buyers browse the store categories, products and brands
+2. Sellers or Merchants manage their own brand component
+3. Admins manage and control the entire store components 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* features:
+  * Node provides the backend environment for this application
+  * Express middleware is used to handle requests, routes
+  * Mongoose schemas to model the application data
+  * React for displaying UI components
+  * Redux to manage application's state
+  * Redux Thunk middleware to handle asynchronous redux actions
 
-### `npm test`
+### Version 1 :
+* The data is stored on MongoDB Atls
+  
+### Version 2:
+* Working on the Design and  adding more features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+An E commerce platform made using React JS, Redux, JWT (authentication), MongoDB(Database),Node.JS
 
-### `npm run build`
+## The application is composed of the following Features:
+# Client 
+Landing Page:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 47 31 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/d9b6e825-ee24-4793-b544-93df4048c704">
+---
+Product Page:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-07 at 11 56 20 PM" src="https://github.com/Aimank009/E-commerce/assets/128082668/1bcc5c9a-0d6c-413c-9e84-510d03716996">
+---
+Product preview:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 49 09 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/32676745-5b1b-40db-acba-0786507e73ed">
+---
+Cart:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 49 54 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/6f8cf015-ff34-4350-a2d8-04221be09b47">
+---
+Address Form:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 50 20 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/e9f8457c-4e86-4e18-ac48-7b39f8ee8ff9">
+---
+Order Summary:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 50 31 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/6e7ec10f-634e-4480-92ca-c27944d7a6bf">
+---
+# Admin
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dashboard:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 56 08 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/fe836765-fa1e-4ba0-ba2d-cee76e6390c6">
+---
+All Products:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 56 52 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/127f5a6d-64b3-49c4-9917-a1d2e7c4d8ce">
+---
+Order:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 57 26 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/9ce3a6ba-2cc9-493f-9b79-2bf3d9199f73">
+---
+Add Product Form:
+<br/>
+<img width="1470" alt="Screenshot 2023-09-08 at 12 58 08 AM" src="https://github.com/Aimank009/E-commerce/assets/128082668/acffd738-0c87-4bda-82f2-29f0002a7c80">
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Code Formatter
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add a `.vscode` directory
+- Create a file `settings.json` inside `.vscode`
+- Install Prettier - Code formatter in VSCode
+- Add the following snippet:  
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Languages & tools
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node](https://nodejs.org/en/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Express](https://expressjs.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Mongoose](https://mongoosejs.com/)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/)

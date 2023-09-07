@@ -18,11 +18,16 @@ An ecommerce store built with MERN stack, and utilizes third party API's. This e
   * Redux to manage application's state
   * Redux Thunk middleware to handle asynchronous redux actions
 
-### Version 1 :
+#### Version 1 :
 * The data is stored on MongoDB Atls
   
-### Version 2:
+#### Version 2:
 * Working on the Design and  adding more features
+
+## For Frontend Code:
+  - Go to the <a href="https://github.com/Aimank009/E-commerce/tree/main">main </a>
+## For Backend Code:
+  - Go to the <a href="https://github.com/Aimank009/E-commerce/tree/new-branch">new-branch</a>
 
 An E commerce platform made using React JS, Redux, JWT (authentication), MongoDB(Database),Node.JS
 

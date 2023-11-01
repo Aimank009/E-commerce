@@ -1,6 +1,6 @@
 # My Cart
 
-
+## Made By-- Aiman Khan and Aman Yadav
 ## Description
 
 An ecommerce store built with MERN stack. This ecommerce store enable three main different flows or implementations:
